@@ -6,7 +6,7 @@ Summary:        End-to-end encrypted IPv6 networking
 License:        GPL-3.0-only
 Group:          Productivity/Networking/Other
 URL:            https://yggdrasil-network.github.io
-Source:         v%{version}
+Source:         https://codeload.github.com/yggdrasil-network/yggdrasil-go/tar.gz/v%{version}
 
 %{?systemd_requires}
 BuildRequires:  systemd go >= 1.13 git
