@@ -1,23 +1,21 @@
-Name:           yggdrasil
-Version:        0.3.14
+Name:           popura
+Version:        0.3.15+popura2
 Release:        1%{?dist}
-Summary:        End-to-end encrypted IPv6 networking
+Summary:        Popura ポプラ: alternative Yggdrasil network client
 
 License:        GPL-3.0-only
 Group:          Productivity/Networking/Other
-URL:            https://yggdrasil-network.github.io
-Source:         https://codeload.github.com/yggdrasil-network/yggdrasil-go/tar.gz/v%{version}
+URL:            https://popura-network.github.io
+Source:         https://codeload.github.com/popura-network/Popura/tar.gz/v%{version}
 
 %{?systemd_requires}
 BuildRequires:  systemd go >= 1.13 git
 Requires(pre):  shadow
-Conflicts:      yggdrasil-develop popura popura-develop
+Conflicts:      popura-develop yggdrasil yggdrasil-develop
 
 %description
-Yggdrasil is a proof-of-concept to explore a wholly different approach to
-network routing. Whereas current computer networks depend heavily on very
-centralised design and configuration, Yggdrasil breaks this mould by making
-use of a global spanning tree to form a scalable IPv6 encrypted mesh network.
+Popura uses the same Yggdrasil core API internally, but adds some useful and
+experimental features which the original client lacks.
 
 %define debug_package %{nil}
 
