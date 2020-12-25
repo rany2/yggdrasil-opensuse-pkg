@@ -20,8 +20,8 @@ experimental features which the original client lacks.
 %define debug_package %{nil}
 
 %prep
-VERSION="$(echo %{version} | sed -e 's/+/-/g')"
-%setup -qn Popura-$VERSION
+export ghversion="$(echo %{version} | sed -e 's/+/-/g')"
+%setup -qn Popura-%{getenv:ghversion}
 
 %build
 export PKGNAME="%{name}"
