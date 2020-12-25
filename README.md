@@ -1,10 +1,8 @@
 # yggdrasil-opensuse
 
-[![Copr build status](https://copr.fedorainfracloud.org/coprs/rany/yggdrasil-opensuse/package/yggdrasil/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/rany/yggdrasil-opensuse/package/yggdrasil/)
-
 Packages for `yggdrasil` and `popura` on `openSUSE`. 
 
-## yggdrasil
+## yggdrasil [![Copr build status](https://copr.fedorainfracloud.org/coprs/rany/yggdrasil-opensuse/package/yggdrasil/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/rany/yggdrasil-opensuse/package/yggdrasil/)
 
 ### For openSUSE Leap
 
@@ -18,7 +16,7 @@ zypper ar https://copr.fedorainfracloud.org/coprs/rany/yggdrasil-opensuse/repo/o
 zypper ar https://copr.fedorainfracloud.org/coprs/rany/yggdrasil-opensuse/repo/opensuse-tumbleweed/rany-yggdrasil-opensuse-opensuse-tumbleweed.repo
 ```
 
-## popura
+## popura [![Copr build status](https://copr.fedorainfracloud.org/coprs/rany/popura-opensuse/package/popura/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/rany/popura-opensuse/package/popura/)
 
 ### For openSUSE Leap
 
