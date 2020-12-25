@@ -20,7 +20,7 @@ experimental features which the original client lacks.
 %define debug_package %{nil}
 
 %prep
-%setup -qn yggdrasil-go-%{version}
+%setup -qn Popura-%{version}
 
 %build
 export PKGNAME="%{name}"
