@@ -18,9 +18,10 @@ Popura uses the same Yggdrasil core API internally, but adds some useful and
 experimental features which the original client lacks.
 
 %define debug_package %{nil}
+%define getghversion() (echo %{version} | sed -e 's/+/-/g')
 
 %prep
-%setup -qn Popura-(echo %{version} | sed -e 's/+/-/g')
+%setup -qn Popura-%{getghversion}
 
 %build
 export PKGNAME="%{name}"
