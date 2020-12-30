@@ -25,8 +25,7 @@ experimental features which the original client lacks.
 %build
 export PKGNAME="%{name}"
 export PKGVER="%{version}"
-go build -buildmode=pie ./cmd/yggdrasil
-go build -buildmode=pie ./cmd/yggdrasilctl
+./build -t -p -l "-linkmode=external"
 
 %install
 rm -rf %{buildroot}
