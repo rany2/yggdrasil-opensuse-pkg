@@ -1,4 +1,4 @@
-# yggdrasil-opensuse
+# yggdrasil-opensuse-pkg
 
 Packages for `yggdrasil` and `popura` on `openSUSE`. 
 

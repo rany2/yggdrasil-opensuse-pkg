@@ -27,8 +27,7 @@ use of a global spanning tree to form a scalable IPv6 encrypted mesh network.
 %build
 export PKGNAME="%{name}"
 export PKGVER="%{version}"
-go build -buildmode=pie ./cmd/yggdrasil
-go build -buildmode=pie ./cmd/yggdrasilctl
+./build -t -p -l "-linkmode=external"
 
 %install
 rm -rf %{buildroot}
