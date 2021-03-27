@@ -33,6 +33,7 @@ rm -rf %{buildroot}
 install -m 0755 -D yggdrasil %{buildroot}/%{_bindir}/yggdrasil
 install -m 0755 -D yggdrasilctl %{buildroot}/%{_bindir}/yggdrasilctl
 install -m 0644 -D contrib/systemd/yggdrasil.service %{buildroot}%{_prefix}/lib/systemd/system/yggdrasil.service
+install -m 0644 -D contrib/systemd/yggdrasil-default-config.service %{buildroot}%{_prefix}/lib/systemd/system/yggdrasil-default-config.service
 mkdir -p %{buildroot}%{_sbindir}
 ln -sf service %{buildroot}%{_sbindir}/rcyggdrasil
 
@@ -40,6 +41,7 @@ ln -sf service %{buildroot}%{_sbindir}/rcyggdrasil
 %{_bindir}/yggdrasil
 %{_bindir}/yggdrasilctl
 %{_prefix}/lib/systemd/system/yggdrasil.service
+%{_prefix}/lib/systemd/system/yggdrasil-default-config.service
 %{_sbindir}/rcyggdrasil
 
 %pre
