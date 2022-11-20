@@ -9,7 +9,7 @@ URL:            https://yggdrasil-network.github.io
 Source:         https://codeload.github.com/yggdrasil-network/yggdrasil-go/tar.gz/v%{version}
 
 %{?systemd_requires}
-BuildRequires:  systemd go >= 1.16 git
+BuildRequires:  systemd go >= 1.17 git
 Requires(pre):  shadow
 Conflicts:      yggdrasil-develop popura popura-develop
 
